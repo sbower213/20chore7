@@ -5,6 +5,9 @@
     text-align: center;
 
 }
+h3:visited{
+    color: black;
+}
 .bitmojiimg {
     width:180px;
     height:180px;
@@ -20,6 +23,7 @@ img{
     display: inline-block;
     float: left;
     top: 10px;
+
     left: 10px;
     width: 150px;
 }
@@ -94,11 +98,18 @@ h3{
 .bottomRowButtons{
     display: inline-block;
 }
+.emily{
+    position:relative;
+    top:10px;
+    right:10px;
+
+}
 .but1{
     position: relative;
     right:155px;
     width:100px;
     top: 20px;
+    background-color: antiquewhite;
     display: inline-block;
 }
 .but2{
@@ -106,6 +117,7 @@ h3{
     left:140px;
     width:100px;
     top: 20px;
+    background-color: antiquewhite;
     display: inline-block;
 }
 .but3{
@@ -113,6 +125,7 @@ h3{
     right:155px;
     width:100px;
     top: 50px;
+    background-color: antiquewhite;
     display: inline-block;
 }
 .but4{
@@ -120,5 +133,6 @@ h3{
     left:140px;
     width:100px;
     top: 50px;
+    background-color: antiquewhite;
     display: inline-block;
 }
