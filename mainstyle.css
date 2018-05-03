@@ -3,7 +3,6 @@
 }
 .container{
     text-align: center;
-
 }
 h3:visited{
     color: black;
@@ -23,11 +22,9 @@ img{
     display: inline-block;
     float: left;
     top: 10px;
-
     left: 10px;
     width: 150px;
 }
-
 h1{
     font-size: 120px;
 }
@@ -94,9 +91,17 @@ h3{
 }
 .topRowButtons{
     display: inline-block;
+    background-color: transparent;
+    background: transparent;
+}
+.menuOptions{
+    background-color: transparent;
+    background: transparent;
 }
 .bottomRowButtons{
     display: inline-block;
+    background-color: transparent;
+    background: transparent;
 }
 .emily{
     position:relative;
@@ -109,30 +114,38 @@ h3{
     right:155px;
     width:100px;
     top: 20px;
-    background-color: antiquewhite;
+    background-color: transparent;
     display: inline-block;
+    background-color: transparent;
+    background: transparent;
 }
 .but2{
     position: relative;
     left:140px;
     width:100px;
     top: 20px;
-    background-color: antiquewhite;
+    background-color: transparent;
     display: inline-block;
+    background-color: transparent;
+    background: transparent;
 }
 .but3{
     position: relative;
     right:155px;
     width:100px;
     top: 50px;
-    background-color: antiquewhite;
+    background-color: transparent;
     display: inline-block;
+    background-color: transparent;
+    background: transparent;
 }
 .but4{
     position: relative;
     left:140px;
     width:100px;
     top: 50px;
-    background-color: antiquewhite;
+    background-color: transparent;
     display: inline-block;
+    background-color: transparent;
+    background: transparent;
 }
