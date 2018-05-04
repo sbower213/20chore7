@@ -1,0 +1,167 @@
+.body{
+    background-color: antiquewhite;
+}
+.container{
+    text-align: center;
+}
+h3:visited{
+    color: black;
+}
+.bitmojiimg {
+    width:180px;
+    height:180px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+    top: 10px;
+    left: 10px;
+}
+img{
+    position: relative;
+    display: inline-block;
+    float: left;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+}
+h1{
+    font-size: 120px;
+}
+h3{
+    display: inline-block;
+    position: relative;
+    bottom:10px;
+    right:60px;
+    font-size: 70px;
+}
+.namesBlock1{
+    background: linear-gradient(indianred, palevioletred, indianred);
+    background-color: indianred;
+    width:90%;
+    height:200px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0px 0px 18px 10px #888888;
+    border-radius: 25px;
+}
+.namesBlock2{
+    background: linear-gradient(cornflowerblue, skyblue, cornflowerblue);
+    background-color: cornflowerblue;
+    width:90%;
+    height:200px;
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    box-shadow: 0px 0px 18px 10px #888888;
+    border-radius: 25px;
+}
+.namesBlock3{
+    background: linear-gradient(lightgreen, darkseagreen, lightgreen);
+    background-color: lightgreen;
+    width:90%;
+    height:200px;
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    box-shadow: 0px 0px 18px 10px #888888;
+    border-radius: 25px;
+}
+.namesBlock4{
+    background: linear-gradient(lightsalmon, lightcoral, lightsalmon);
+    background-color: lightsalmon;
+    width:90%;
+    height:200px;
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    box-shadow: 0px 0px 18px 10px #888888;
+    border-radius: 25px;
+}
+.namesBlockAll{
+    background: linear-gradient(mediumpurple, lightblue, mediumpurple);
+    background-color: mediumpurple;
+    width:90%;
+    height:200px;
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    box-shadow: 0px 0px 18px 10px #888888;
+    border-radius: 25px;
+}
+.topRowButtons{
+    display: inline-block;
+    background-color: transparent;
+    background: transparent;
+}
+.menuOptions{
+    background-color: transparent;
+    background: transparent;
+}
+.bottomRowButtons{
+    display: inline-block;
+    background-color: transparent;
+    background: transparent;
+}
+.emily{
+    position:relative;
+    top:10px;
+    right:10px;
+
+}
+.but1{
+    position: relative;
+    right:155px;
+    width:100px;
+    top: 20px;
+    background-color: transparent;
+    display: inline-block;
+    background-color: transparent;
+    background: transparent;
+}
+.but2{
+    position: relative;
+    left:140px;
+    width:100px;
+    top: 20px;
+    background-color: transparent;
+    display: inline-block;
+    background-color: transparent;
+    background: transparent;
+}
+.but3{
+    position: relative;
+    right:155px;
+    width:100px;
+    top: 50px;
+    background-color: transparent;
+    display: inline-block;
+    background-color: transparent;
+    background: transparent;
+}
+.but4{
+    position: relative;
+    left:140px;
+    width:100px;
+    top: 50px;
+    background-color: transparent;
+    display: inline-block;
+    background-color: transparent;
+    background: transparent;
+}
+
+.pieChartDisplay {
+    float: center;
+}
+
+#leaderboard {
+    width:1000px;
+    height:750px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    float: center;
+    top: 10px;
+    left: 400px;
+}
+

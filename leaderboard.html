@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="leaderboard.css">
     <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Leaderboard</title>
 </head>
 <body class="body">
@@ -14,28 +15,55 @@
 
     <div class="namesContainer">
 
-            <div class="namesBlock1">
+            <div id = "jon" onclick = changeImage("jon") class="namesBlock1">
                 <img class="bitmojiimg" src="images/jon.png">
                 <h3>1. Jon</h3>
             </div>
 
-            <div class="namesBlock2">
+            <div id = "you" onclick = changeImage("you") class="namesBlock2">
                 <img class="bitmojiimg" src="images/you.png">
                 <h3>2. You</h3>
             </div>
 
-            <div class="namesBlock3">
+            <div id = "megan" onclick = changeImage("megan") class="namesBlock3">
                 <img class="bitmojiimg" src="images/megan.png">
                 <h3>3. Megan</h3>
             </div>
 
-            <div class="namesBlock4">
-                <div class="emily">
-                    <img class="bitmojiimg" src="images/emily.png">
-                </div>
+            <div id="emily" onclick = changeImage("emily") class="namesBlock4">
+                <img class="bitmojiimg" onclick = changeImage("emily") src="images/emily.png">
                 <h3>4. Emily</h3>
             </div>
+
+            <div id = "all" class="namesBlockAll" onclick = changeImage("all")>
+                <img class="bitmojiimg" src="images/all.png">
+            <h3>All</h3>
+        </div>
     </div>
+
+    <script>
+
+        function changeImage(tag) {
+            if(tag === "jon")
+                $("#leaderboard").attr("src", "images/jonChores.png");
+            else if (tag === "you")
+                $("#leaderboard").attr("src", "images/yourChores.png");
+            else if (tag === "megan")
+                $("#leaderboard").attr("src", "images/meganChores.png");
+            else if (tag === "emily")
+                $("#leaderboard").attr("src", "images/emilyChores.png");
+            else if(tag === "all")
+                $("#leaderboard").attr("src", "images/leaderboardMain.png");
+
+        }
+
+    </script>
+
+
+    <div class="pieChartDisplay">
+        <img id="leaderboard" src="images/leaderboardMain.png">
+    </div>
+
 
 
 </div>
