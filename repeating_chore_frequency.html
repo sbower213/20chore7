@@ -4,32 +4,94 @@
   <title>Repeating Chore</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="mainstyle.css">
+  <script src="main.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="body">
   
 <div class="container">
 
-<a href="chore_type.html"> <img src ="images/back_arrow.png" width ="50" height="50"></a>
-  <h1>Repeating Chore</h1>
+
+      <a href="chore_type.html"><div class="title">
+        <div class="butback">
+            <img class="back" src="images/back.png">
+        </div>
+        <h1><strong>Repeating Chore</strong></h1>
+    </div></a>
   <br>
   <p>Repeat every . . .</p> 
     <br>
-  <form>
+  <div class = "col-md-6 col-md-offset-3 form-group" align="left">
+  <form >
     <div class="radio">
       <label><input type="radio" name="optradio">Day</label>
     </div>
+ 
     <div class="radio">
-      <label><input type="radio" name="optradio">__ days</label>
+      <label><input type="radio" name="optradio">Every <input type="text" placeholder="#">  days</label>
     </div>
+ 
+ 
     <div class="radio">
-      <label><input type="radio" name="optradio">Every S M T W Th F S</label>
+      <label><input type="radio" name="optradio" value="everyday" >Every __ day . . .</label>
+       <div id ="check1"
+
+            <label class="checkbox-inline">
+            <input type="checkbox" value="">S
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value="">M
+            <label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value="">Tu
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value="">W
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value="">Th
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value="">F
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value="">Sat
+            </label>
     </div>
+    </div>
+
+
     <div class="radio">
-      <label><input type="radio" name="optradio">First S M T W Th F S</label>
+      <label><input type="radio" name="optradio" value="firstday" >First of the week . . . </label>
+       <div id ="check2"
+
+            <label class="checkbox-inline">
+            <input type="checkbox" value="">S
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value="">M
+            <label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value="">Tu
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value="">W
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value="">Th
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value="">F
+            </label>
+            <label class="checkbox-inline">
+            <input type="checkbox" value="">Sat
+            </label>
     </div>
+    </div>
+    
     <div class="radio">
       <label><input type="radio" name="optradio">Week</label>
     </div>
@@ -43,10 +105,33 @@
   
  
   </form>
+  
    <a class="btn btn-primary" href="chore_start_date.html" role="button">Next</a>
-
+    </div>
   
 </div>
 
 </body>
 </html>
+<script>
+window.onload = function() {
+    $('#check1').hide();
+    $('#check2').hide();
+};
+
+$(function() {
+    $('input[name="optradio"]').on('click', function() {
+        if ($(this).val() == 'everyday') {
+            $('#check1').show();
+            $('#check2').hide();
+        }
+        else  if ($(this).val() == 'firstday') {
+            $('#check2').show();
+            $('#check1').hide();
+        }else{
+            $('#check1').hide();
+            $('#check2').hide();
+        }
+    });
+});
+</script>

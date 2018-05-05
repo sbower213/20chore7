@@ -4,17 +4,25 @@
   <title>Chore Start Date & Time</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="mainstyle.css">
+  <script src="main.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="body">
   
 <div class="container">
-    <!--- back button here--->
-    <a href="chore_type.html"> <img src ="images/back_arrow.png" width ="50" height="50"></a>
-    <h1>Chore Start Time</h1>
+
+    
+    <a href="repeating_chore_frequency.html"><div class="title">
+        <div class="butback">
+            <img class="back" src="images/back.png">
+        </div>
+        <h1><strong>Chore Start Time</strong></h1>
+    </div></a>
     <br>
+      <div class = "col-md-6 col-md-offset-3 form-group" align="left">
     <form>
     Chore Start Date:
         <input type="date" name="start_date">
@@ -30,6 +38,7 @@
   
   
      <a class="btn btn-primary" href="chore_details.html" role="button">Next</a>
+     </div>
 </div>
 
 </body>
