@@ -18,7 +18,29 @@ h3:visited{
     top: 10px;
     left: 10px;
 }
-img{
+.yui3-calendar{
+	width: 95vw;
+	height: 50vh;
+	font-size: 65px;
+	
+}
+
+.yui3-calendar-header-label{
+	margin-bottom:40px;
+	padding-top: 20px;
+}
+
+.yui3-calendar-header{
+	margin-bottom: 50px;
+}
+
+.yui3-calendarnav-prevmonth .yui3-calendarnav-nextmonth{
+	margin-top:30px !important;
+	font-size: 110px !important;
+}
+
+
+.mainPageIcon{
     position: relative;
     display: inline-block;
     float: left;
