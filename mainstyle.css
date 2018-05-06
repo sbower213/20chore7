@@ -55,7 +55,16 @@ h3:visited{
     width: 150px;
 }
 .pageTitle{
-	padding-top: 45px;
+	padding-top: 80px;
+}
+.typeButtonGroup{
+	width: 100%;
+	margin-top:50px;
+}
+.typeButton{
+	padding: 85px 0px !important;
+	margin-top:10px !important;
+	font-size:30px !important;
 }
 #oneTimeStartTime{
 	font-size:85px;
