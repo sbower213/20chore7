@@ -8,8 +8,8 @@
 <body class="body container">
 <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
 
-
-<h1 class="title"><a href="chore_type.html"> <img src ="images/back.png" width="100px"></a>One Time Chore</h1>
+<a href="chore_type.html"><img class="backbutton" src ="images/back.png" width="100px"></a>
+<h1 class="title pageTitle">One Time Chore</h1>
 <div id="demo" class="yui3-skin-sam yui3-g"> <!-- You need this skin class -->
 
   <div id="leftcolumn" class="yui3-u">
@@ -17,7 +17,15 @@
      <div id="mycalendar"></div>
   </div>
 </div>
-
+<div id="oneTimeStartTime">
+	<form>
+    Starting at:
+        <input type="time" name="start_time" id="oneTimePicker">
+    <br><br>
+	<a href="chore_details.html"><button type="button" class="submitButton">Submit</button></a>
+	</form>
+	
+</div>
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function(event) { 
 YUI().use('calendar', 'datatype-date', 'cssbutton',  function(Y) {
