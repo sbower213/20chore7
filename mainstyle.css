@@ -10,6 +10,9 @@
 	top: 20px;
 	left: 20px;
 }
+.choreDay{
+	background-color: #228844 !important;
+}
 h3:visited{
     color: black;
 }

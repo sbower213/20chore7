@@ -8,7 +8,7 @@
 <body class="body container">
 <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
 
-<a href="chore_type.html"><img class="backbutton" src ="images/back.png" width="125px"></a>
+<a href="main.html"><img class="backbutton" src ="images/back.png" width="125px"></a>
 <h1 class="title pageTitle">Calendar</h1>
 <div id="demo" class="yui3-skin-sam yui3-g">
 
@@ -35,6 +35,22 @@ YUI().use('calendar', 'datatype-date', 'cssbutton',  function(Y) {
     // Get a reference to Y.DataType.Date
     var dtdate = Y.DataType.Date;
 
+	var rules = {
+	  "2018": {
+		"4": {
+		  "11,15,21,22,29":"chore-days"
+		}
+	  }
+	};
+
+	var filterFunction = function (date, node, rules) {
+	  if (rules.indexOf("chore-days" >= 0)) {
+		node.addClass("choreDay");
+	  }
+	}
+
+	calendar.set("customRenderer", {rules: rules, filterFunction: filterFunction});
+	
     // Listen to calendar's selectionChange event.
     calendar.on("selectionChange", function (ev) {
 
