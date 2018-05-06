@@ -18,6 +18,7 @@ h3:visited{
     top: 10px;
     left: 10px;
 }
+
 .yui3-calendar{
 	width: 95vw;
 	height: 50vh;
@@ -48,6 +49,7 @@ h3:visited{
     left: 10px;
     width: 150px;
 }
+
 h1{
     font-size: 120px;
 }
