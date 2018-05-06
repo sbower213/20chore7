@@ -150,18 +150,14 @@ h3{
     background: transparent;
 }
 
-.pieChartDisplay {
-    float: center;
-}
 
 #leaderboard {
-    width:1000px;
-    height:750px;
+    width:750px;
+    height:700px;
     position: relative;
-    border-radius: 50%;
     display: inline-block;
-    float: center;
+    float: left;
     top: 10px;
-    left: 400px;
+    right: 500px;
 }
 
