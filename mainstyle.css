@@ -18,14 +18,7 @@ h3:visited{
     top: 10px;
     left: 10px;
 }
-img{
-    position: relative;
-    display: inline-block;
-    float: left;
-    top: 10px;
-    left: 10px;
-    width: 150px;
-}
+
 h1{
     font-size: 120px;
 }
